@@ -7,7 +7,7 @@ import streamlit.components.v1 as components
 
 
 from PIL import Image
-
+   
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
@@ -122,17 +122,19 @@ venue_id_prediction = knn_model.predict(input_df)
 
 print("Predicted Venue ID:", venue_id_prediction[0])
 st.write("Predicted Venue ID:", venue_id_prediction[0])
+ 
 
-
-d = {1:"Restaurant A",
-     2:"Park B",
-     3:"Concert Hall C",
-     4:"Beach D",
-     5:"Picnic Spot E",
-     6:"Bar F",
-     7:"Theater G",
-     8:"Restaurant H",
-     9:"Park I",
-     10:"Concert Hall J"}
+d = {1:"Wonderla",
+     2:"Click Art Museum",
+     3:"Besant Nagar",
+     4:"Battlefield",
+     5:"Zen Arts Academy",
+     6:"Sporfy",
+     7:"ECR & OMR",
+     8:"Cooking or Baking with Movienight in Home",
+     9:"Sathyam Cinemas",
+     10:"Cream Story",
+	11:"Pheonix Mall",
+	12:"6th Avenue Restro Bar"}
 
 st.write("Predicted Venue : ", d[venue_id_prediction[0]])
