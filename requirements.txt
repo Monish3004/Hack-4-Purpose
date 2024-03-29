@@ -1,0 +1,4 @@
+openpyxl
+plotly.express
+matplotlib
+scikit-learn
